@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>intro</title>
+    <link rel="icon" href="images/valley icon.png" />
+    <style>
+        .welc {
+            margin-left: 500px;
+            margin-top: 30px;
+        }
+        .music {
+            text-align: right;
+            margin-left: 1500px;
+        }
+      .start {
+        margin-top: 350px;
+      }
+      .content2 {
+        margin-left: 0px;
+        margin-top: 430px;
+        margin-bottom: 500px;
+        text-align: center;
+      }
+      audio.d {
+        opacity: 0;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+      }
+      img.c {
+        position: fixed;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        float: right;
+      }
+      .content {
+        margin-top: 400px;
+        margin-left: 200px;
+      }
+      .banner {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .banner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      a {
+        position: relative;
+        background: rgb(68, 68, 68);
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 4.5em;
+        letter-spacing: 0.1em;
+        padding: 10px 20px;
+        transition: 1.5s;
+      }
+      a:hover {
+        letter-spacing: 0.25em;
+        background: var(--clr);
+        color: var(--clr);
+        box-shadow: 0 0 50px var(--clr);
+      }
+      a::before {
+        content: "";
+        position: absolute;
+        inset: 2px;
+        background: #27282c;
+      }
+      a span {
+        position: relative;
+        z-index: 1;
+      }
+      a i {
+        position: absolute;
+        inset: 0;
+        display: block;
+      }
+      a i::before {
+        content: "";
+        position: absolute;
+        border: 2px solid var(--clr);
+        width: 22px;
+        height: 14px;
+        left: 80%;
+        top: -3.5px;
+        background: #27282c;
+        transition: 0.5s;
+        transform: translateX(-50%);
+      }
+      a:hover i::before {
+        width: 40px;
+        left: 20%;
+      }
+      a i::after {
+        content: "";
+        position: absolute;
+        border: 2px solid var(--clr);
+        width: 22px;
+        height: 14px;
+        left: 20%;
+        bottom: -3.5px;
+        background: #27282c;
+        transition: 0.5s;
+        transform: translateX(-50%);
+      }
+      a:hover i::after {
+        width: 40px;
+        left: 80%;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+        color: #111;
+        font-size: 12em;
+        position: relative;
+      }
+      h1 span {
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        animation: animate 2s linear infinite;
+      }
+      h1 span:nth-child(1) {
+        animation-delay: 0s;
+      }
+      h1 span:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+      h1 span:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+      h1 span:nth-child(4) {
+        animation-delay: 0.75s;
+      }
+      h1 span:nth-child(5) {
+        animation-delay: 1s;
+      }
+      h1 span:nth-child(6) {
+        animation-delay: 1.25s;
+      }
+      h1 span:nth-child(7) {
+        animation-delay: 1.5s;
+      }
+      @keyframes animate {
+        0%,
+        100% {
+          color: #fff;
+          filter: blur(2px);
+          text-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff, 0 0 40px #00b3ff,
+            0 0 80px #00b3ff, 0 0 120px #00b3ff, 0 0 200px #00b3ff,
+            0 0 300px #00b3ff;
+        }
+        5%,
+        95% {
+          color: #111;
+          filter: blur(0px);
+          text-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <video autoplay muted loop>
+        <source src="videos/intro.mp4" />
+      </video>
+      <div class="content2">
+        <div class="welc"><h1>
+          <span>W</span>
+          <span>e</span>
+          <span>l</span>
+          <span>c</span>
+          <span>o</span>
+          <span>m</span>
+          <span>e</span>
+        </h1></div>
+        <br />
+        <div class="start">
+          <a href="hello.html" style="--clr: #00b3ff"><span>START</span><i></i></a>
+        </div>
+        <div class="music">
+            <img class="c" src="images/play music.png" alt="play button" />
+            <audio class="d" src="audio/mp3.mp3" controls loop>a song</audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

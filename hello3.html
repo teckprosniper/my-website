@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>why you should visit</title>
+    <link rel="icon" href="images/valley icon.png" />
+    <style>
+      #preloader {
+        background: white url(gif/loader.gif) no-repeat center;
+        background-size: 50%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+      }
+      img.d {
+        position: fixed;
+        width: 100px;
+        height: 100px;
+      }
+      p.c {
+        color: white;
+        font-size: 200%;
+        position: fixed;
+        margin-top: 270px;
+        font-family: "Snell Roundhand, cursive";
+        background-color: rgba(0, 0, 0, 0.504);
+      }
+      img.b {
+        position: fixed;
+        margin-left: 400px;
+      }
+      img.a {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      a.hover :hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body onload="myfonction()">
+    <div id="preloader"></div>
+    <img class="a" src="images/why background.JPG" alt="a rock in the valley" />
+    <a class="hover" href="hello.html"
+      ><img class="d" src="images/b.png" alt="back button"
+    /></a>
+    <img class="b" src="images/why to visit.png" alt="why you should visit" />
+    <p class="c">
+      Kadisha valley is one of the most beautiful <br />
+      places in Lebanon, I recommend you to visit it. <br />
+      When you are in the valley, you feel peaceful, <br />
+      happy and you forgot all your problems. <br />
+      In this valley, you can practice many hobbies <br />
+      like hiking, photographing, climbing cliffs, <br />
+      discovering caves, going on a picnic and <br />
+      much more. You can discover how <br />
+      the ancients where living. Also you can try <br />
+      local foods in some eco restaurant, <br />
+      and you can spend a night in a guest house.
+    </p>
+    <script>
+      var preloader = document.getElementById("preloader");
+      function myfonction() {
+        preloader.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

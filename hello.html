@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my first web page</title>
+    <link rel="icon" href="images/valley icon.png" />
+    <style>
+      #preloader {
+        background: white url(gif/loader.gif) no-repeat center;
+        background-size: 50%;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        border-radius: 5px;
+        box-shadow: inset 0 0 10px white;
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: darkgreen;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(85, 199, 85);
+      }
+      a.b :hover {
+        opacity: 0.7;
+      }
+      a.h :hover {
+        opacity: 0.7;
+      }
+      a.a :hover {
+        opacity: 0.7;
+      }
+      a.hover :hover {
+        opacity: 0.7;
+      }
+      img.tip {
+        float: right;
+      }
+     div.intro { text-align: center;}
+      p.i {background-color: rgba(0, 0, 0, 0.485);
+      }
+      div.g {
+        text-align: center;
+      }
+      img.f {
+        height: 200px;
+        margin-left: 190px;
+      }
+      img.c {
+        height: 100px;
+        margin-left: 250px;
+      }
+      img.d {
+        height: 100px;
+        width: 200px;
+        margin-left: 230px;
+      }
+      img.e {
+        height: 100px;
+        width: 400px;
+        float: right;
+        margin-right: 50px;
+      }
+      a.a {
+        padding: 0px;
+        margin: 0px;
+      }
+      a.b {
+        padding: 0px;
+        margin: 0px;
+      }
+      a.h {
+        padding: 0px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body background="images/back.JPG" onload="myfonction()">
+    <div id="preloader"></div>
+    <div class="g">
+      <img class="f" src="images/kadisha.png" alt="kadisha vally" />
+      <img class="tip" src="images/tip.png" alt="press any key for a tip">
+    </div>
+        <a class="a" href="hello1.html"
+          ><img class="c" src="images/history.png" alt="history"
+        /></a>
+        <a class="b" href="hello21.html"
+          ><img class="d" src="images/places.png" alt="places"
+        /></a>
+        <a class="h" href="hello3.html"
+          ><img class="e" src="images/why.png" alt="why you should go visit"
+        /></a>
+    </div>
+    <br><br><br><div class="intro"><img src="images/intro.png" alt="intro"></div> <br>
+    <p class="i">
+      <img style="margin-left: 60px;" src="images/fm.png" alt="contact us">
+      <a class="hover" href="https://wa.me/96171042598" target="_blank"><img style="margin-left: 150px;" class="j" src="images/wa.png" alt="my whatsapp"></a>
+    <a class="hover" href="https://www.facebook.com/prosniperant" target="_blank"><img style="margin-left: 20px;" src="images/fb.png" alt="facebook"></a>
+    <a class="hover" href="https://www.instagram.com/i_.am.legend/" target="_blank"><img style="margin-left: 20px;" src="images/ig.png" alt="instagram"></a>
+    <a class="hover" href="mailto:anthonyrahme2004@gmail.com" target="_blank"><img style="margin-left: 20px;" src="images/gmail.png" alt="my gmail"></a>
+    <a class="hover" href="https://twitter.com/Prosniperant?s=20&t=ws8PQk0LthfN9Ye_Kr57Og" target="_blank"><img style="margin-left: 20px;" src="images/tw.png" alt="my twitter"></a>
+    <a class="hover" href="https://discord.gg/nJAZZT4P" target="_blank"><img style="margin-left: 20px;" src="images/discord.png" alt="discord"></a>
+    <a class="hover" href="https://t.me/antoinenehme" target="_blank"><img style="margin-left: 20px;" src="images/tg.png" alt="my telegram"></a>
+  </p>
+  <script>
+    document.addEventListener("keypress", e => {
+      alert("press on history, places or why you should visit for more information!!!")
+    })
+  </script>
+  <script>
+    var preloader = document.getElementById("preloader");
+    function myfonction() {
+      preloader.style.display = "none";
+    }
+  </script>
+  </body>
+</html>
